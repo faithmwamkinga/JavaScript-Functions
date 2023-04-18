@@ -21,14 +21,13 @@ addItems(groceryArray,stockArray)
 // }
 // updateStockQuantity(groceryArray,stockArray)
 
-function updateStockQuantity(groceryArray,stockArray){
-    let n =groceryArray.indexOf();
+function updateStockQuantity(groceries,number){
+    let n =groceryArray.indexOf(groceries);
     if (n===-1){
         console.log("Not available in  the array");
     }
-    
-       console.log(groceryArray.push(stockArray));
-    
+    stockArray.push(number)
+    console.log(`The number of ${groceries} is ${stockArray[6]}`)
 }
 updateStockQuantity("banana",120)
 
